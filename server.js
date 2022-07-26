@@ -12,6 +12,7 @@ app.get('/',(req,res)=>{
 app.use(expressLayouts)
 app.set("views", path.join(__dirname, '/resources/views'))
 app.set("view engine", 'ejs')
+app.use(express.static(__dirname + '/public'))
 
 app.listen(PORT, ()=>{
     console.log('listening on port 3000');

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+nav li:last-child a {
+  background-color: #7E263C;
+  color: #fff;
+}
+
+nav li:last-child a:hover {
+  background-color: #ba001f;
+}
+
+nav li {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li:hover {
+  color: #7E263C;
+}
+
+section.hero {
+  background-color: #f8f8f8;
+}
+
+section.hero img {
+  width: 400px;
+}
+
+section.hero .btn-order {
+  background-color: #7E263C;
+}
+
+section.menu .card {
+  border-radius: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.menu .card:hover {
+  background-color: aqua;
+}
+
+section.menu .size {
+  background: #f8f8f8;
+}
+
+section.menu .add-to-cart {
+  border: 2px solid #7E263C;
+  color: #7E263C;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.menu .add-to-cart:hover {
+  background: #7E263C;
+  color: #fff;
+}
