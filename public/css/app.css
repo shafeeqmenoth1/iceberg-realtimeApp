@@ -5,6 +5,10 @@ body {
   color: #232323;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 nav li:last-child a {
   background-color: #7E263C;
   color: #fff;
@@ -29,10 +33,27 @@ section.hero {
 
 section.hero img {
   width: 400px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-section.hero .btn-order {
-  background-color: #7E263C;
+section.hero img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.btn-primary {
+  background: #7E263C;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #ba001f;
+}
+
+section.menu img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 section.menu .card {
@@ -42,7 +63,13 @@ section.menu .card {
 }
 
 section.menu .card:hover {
-  background-color: aqua;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+section.menu .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section.menu .size {
@@ -59,4 +86,35 @@ section.menu .add-to-cart {
 section.menu .add-to-cart:hover {
   background: #7E263C;
   color: #fff;
+}
+
+section.cart {
+  background-color: #f8f8f8;
+}
+
+section.cart .amount {
+  color: #7E263C;
+}
+
+section.cart .order h4 i {
+  font-size: 30px;
+}
+
+section.login {
+  background-color: #f8f8f8;
+  min-height: calc(100vh - 92px);
+}
+
+section.login .form-wrapper {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+section.login .form-wrapper input {
+  border-radius: 5px;
+}
+
+section.login .form-wrapper .submit-btn a {
+  color: #7E263C;
 }

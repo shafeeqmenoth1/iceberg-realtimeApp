@@ -4,15 +4,14 @@ const path = require('path');
 const PORT = process.env.PORT || 3000
 const expressLayouts = require('express-ejs-layouts');
 
-app.get('/',(req,res)=>{
-    res.render('home')
-})
-
-
 app.use(expressLayouts)
 app.set("views", path.join(__dirname, '/resources/views'))
 app.set("view engine", 'ejs')
 app.use(express.static(__dirname + '/public'))
+
+
+require ('./routes/web')(app)
+
 
 app.listen(PORT, ()=>{
     console.log('listening on port 3000');
