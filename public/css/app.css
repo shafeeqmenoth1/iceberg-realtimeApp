@@ -118,3 +118,8 @@ section.login .form-wrapper input {
 section.login .form-wrapper .submit-btn a {
   color: #7E263C;
 }
+
+footer {
+  background: #7E263C;
+  color: #fff;
+}
