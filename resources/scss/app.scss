@@ -15,7 +15,7 @@ body{
     display: none;
 }
 
-nav li:last-child a{
+nav li.cart a{
     background-color:$primary-color;
     color: $light;
 
@@ -48,10 +48,19 @@ section.hero {
 
   
 }
-
-.btn-primary{
+.auth-btn{
     background:$primary-color;
     color: $light;
+    display: inline;
+
+    &:hover{
+        background:$primary-hover ;
+    }
+}
+.primary-btn{
+    background:$primary-color;
+    color: $light;
+  
 
     &:hover{
         background:$primary-hover ;

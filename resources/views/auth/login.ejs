@@ -1,18 +1,23 @@
 <section class="login flex justify-center items-center">
     <div>
     <div class="form-wrapper bg-white p-6">
-        <form action="">
-           
+       
+        <form action="/login" method="POST">
+            <%if(messages.error){%>
+                <span class="text-red-500 text-sm"><%=messages.error%></span>
+                <%}%>
         <div class="flex flex-col my-4">
             <label for="email">Email</label>
-            <input class="border border-gray-400 p-2 focus:outline-none focus:shadow-outline"  type="email" name="email" placeholder="Email">
+            <input class="border border-gray-400 p-2 focus:outline-none focus:shadow-outline" 
+             type="email" name="email" placeholder="Email">
         </div>
         <div class="flex flex-col my-4">
             <label for="name">Password</label>
-            <input class="border border-gray-400 p-2 focus:outline-none focus:shadow-outline" type="password" name="password" name="email" placeholder="Password">
+            <input class="border border-gray-400 p-2 focus:outline-none focus:shadow-outline"
+             type="password" name="password" name="email" placeholder="Password">
         </div>
         <div class="submit-btn flex justify-between items-center mt-6">
-            <button  class="btn-primary px-4 py-2 rounded-full font-bold">Login</button>
+            <button type="submit"  class="bg-red-900 text-white px-4 py-2 rounded-full font-bold">Login</button>
             <a class=" ml-6 font-bold text-xs" href="/register">Don't have an account ?</a>
         </div>
         </form>

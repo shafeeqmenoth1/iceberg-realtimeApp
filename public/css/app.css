@@ -9,12 +9,12 @@ body {
   display: none;
 }
 
-nav li:last-child a {
+nav li.cart a {
   background-color: #7E263C;
   color: #fff;
 }
 
-nav li:last-child a:hover {
+nav li.cart a:hover {
   background-color: #ba001f;
 }
 
@@ -42,12 +42,22 @@ section.hero img:hover {
           transform: scale(1.01);
 }
 
-.btn-primary {
+.auth-btn {
+  background: #7E263C;
+  color: #fff;
+  display: inline;
+}
+
+.auth-btn:hover {
+  background: #ba001f;
+}
+
+.primary-btn {
   background: #7E263C;
   color: #fff;
 }
 
-.btn-primary:hover {
+.primary-btn:hover {
   background: #ba001f;
 }
 
