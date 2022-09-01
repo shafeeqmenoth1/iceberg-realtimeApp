@@ -21,14 +21,17 @@ const authController = ()=>{
                     req.flash('error',info.message)
                     next(err)
                 }
-                if(!user){
+                if(!user){ 
                     req.flash('error',info.message)
                     return res.redirect('/login')
                 }
-                req.login(user,(err)=>{
+                req.logIn(user,(err)=>{
                     if(err){
                         req.flash('error',info.message)
                         return next(err)
+                    }
+                    if(user.role === 'admin'){
+                        return res.redirect('/admin/orders')
                     }
                     return res.redirect('/')
 

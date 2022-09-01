@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="css/toastr.css" rel="stylesheet"/>
-    <script src="js/toastr.js"></script>
-
+    <script src="/js/scripts.js"></script>
+    <script  src="/js/app.js"></script>
+    <script src="/js/toastr.js"></script>
+    
 
 </head>
 <body>
-   <nav class="container mx-auto flex items-center justify-between py-4 ">
+   <nav class="container navbar mx-auto flex items-center justify-between py-4 ">
     <div>
-        <img src="img/logo.png" width="120" alt="logo">
+        <a href="/"><img src="/img/logo.png" width="120" alt="logo"></a>
     </div>
     <div>
         <ul class="flex items-center">
-            <li class="ml-6"><a href="">Menu</a></li>
+            <li class="ml-6"><a href="/">Menu</a></li>
             <li class="ml-6"><a href="">Offers</a></li>
             <%if(user){%>
                 <form id="logout" action="/logout" method="POST">
@@ -46,7 +48,6 @@
 
 </p>
 </footer>
- <script  src="js/app.js"></script>
-
+ 
 </body>
 </html>

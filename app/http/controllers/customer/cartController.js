@@ -15,15 +15,17 @@ const cartController = ()=>{
             //     totalQty:0,
             //     totalPrice:0
             // }
-
-            if(!req.session.cart){
-                req.session.cart = {
-                    items:{},
-                    totalQty:0,
-                    totalPrice:0
-
+            
+                if(!req.session.cart){
+                    req.session.cart = {
+                        items:{},
+                        totalQty:0,
+                        totalPrice:0
+    
+                    }
                 }
-            }
+            
+        
 
             let cart = req.session.cart
             if(!cart.items[req.body._id]){

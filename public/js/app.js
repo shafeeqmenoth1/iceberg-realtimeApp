@@ -16219,7 +16219,7 @@ var updateCart = function updateCart(icecream) {
       "onclick": null,
       "showDuration": "300",
       "hideDuration": "1000",
-      "timeOut": "5000",
+      "timeOut": "2000",
       "extendedTimeOut": "1000",
       "showEasing": "swing",
       "hideEasing": "linear",
@@ -16238,7 +16238,14 @@ addToCart.forEach(function (btn) {
     var icecream = JSON.parse(btn.dataset.icecream);
     updateCart(icecream);
   });
-});
+}); // Remove alert Message
+// let alertMsg = document.querySelector('#success-alert')
+// if(alertMsg){
+//     setTimeout(()=>{
+//         alertMsg.remove();
+//     },1000)
+// }
+// admin js
 })();
 
 /******/ })()

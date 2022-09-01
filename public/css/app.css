@@ -9,6 +9,11 @@ body {
   display: none;
 }
 
+nav {
+  background: #fff;
+  width: 100%;
+}
+
 nav li.cart a {
   background-color: #7E263C;
   color: #fff;
@@ -126,6 +131,14 @@ section.login .form-wrapper input {
 }
 
 section.login .form-wrapper .submit-btn a {
+  color: #7E263C;
+}
+
+section.orders {
+  min-height: calc(100vh - 92px);
+}
+
+section.orders .link {
   color: #7E263C;
 }
 

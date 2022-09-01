@@ -15,6 +15,12 @@ body{
     display: none;
 }
 
+nav {
+    
+    background: $light;
+    width: 100%;
+}
+
 nav li.cart a{
     background-color:$primary-color;
     color: $light;
@@ -127,6 +133,14 @@ section.login {
         .submit-btn a {
             color: $primary-color;
         }
+    }
+}
+section.orders{
+    min-height: calc(100vh - 92px);
+  
+
+    .link{
+        color: $primary-color;
     }
 }
 

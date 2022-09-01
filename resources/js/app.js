@@ -1,5 +1,6 @@
 import axios from 'axios'
 import toastr from 'toastr'
+import {initAdmin} from "./admin"
 
 let addToCart = document.querySelectorAll('.add-to-cart');
 let cartCounter = document.querySelector('#cartCounter')
@@ -20,7 +21,7 @@ const updateCart = (icecream)=>{
             "onclick": null,
             "showDuration": "300",
             "hideDuration": "1000",
-            "timeOut": "5000",
+            "timeOut": "2000",
             "extendedTimeOut": "1000",
             "showEasing": "swing",
             "hideEasing": "linear",
@@ -42,3 +43,27 @@ addToCart.forEach((btn)=>{
       
     })
 })
+
+
+
+
+
+initAdmin()
+
+
+// Remove alert Message
+
+
+// let alertMsg = document.querySelector('#success-alert')
+
+
+// if(alertMsg){
+//     setTimeout(()=>{
+//         alertMsg.remove();
+//     },1000)
+// }
+
+
+// admin js
+
+ 
